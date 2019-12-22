@@ -25,4 +25,4 @@ async def help(ctx):
     embed.add_field(name="!roll", value="roll now to get mapotofu", inline=False)
     await ctx.channel.send(embed=embed)
 
-bot.run('Mjc0OTYxOTAwMzY5MDg0NDE2.XfWqaw.I1lzpkwGuFVbQPFEcVZTi3nZZEk')
+bot.run('token')
