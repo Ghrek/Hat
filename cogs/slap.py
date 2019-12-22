@@ -9,7 +9,7 @@ class slap(commands.Cog):
     @commands.command()
     async def slap(self, ctx, members: commands.Greedy[discord.Member], *, reason='no reason'):
         slapped = ", ".join(x.name for x in members)
-        await ctx.send('{} just got slapped for {}'.format(slapped, reason))
+        await ctx.send('{} just got slapped {}'.format(slapped, reason))
         await ctx.message.delete()
 
 def setup(bot):
