@@ -1,6 +1,6 @@
 from discord.ext import commands
 import os
-import discord  
+import discord
 import random
 
 bot = discord.Client()
@@ -23,6 +23,7 @@ async def help(ctx):
     embed.add_field(name="!ping", value="sends a pong bitch message", inline=False)
     embed.add_field(name="!say", value="literally repeats whatever argument you state", inline=False)
     embed.add_field(name="!roll", value="roll now to get mapotofu", inline=False)
+    embed.add_field(name="!slap", value="slap someone (e.g !slap @Ghrek for being such a faggot)", inline=False)
     await ctx.channel.send(embed=embed)
 
 bot.run('token')
